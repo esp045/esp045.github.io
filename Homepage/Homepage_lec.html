@@ -3,6 +3,8 @@
 <html lang="ko"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="Homepage.css"/>
+<style> table, tr, th, td {border: 1px solid black; border-collapse:collapse;}
+</style>
 <script>
 function startTime() {
     var today = new Date();
@@ -38,7 +40,26 @@ function checkTime(i) {
 </ul>
 </div>
 <section class="col-9 col-m-9"> <!--  main  -->
-<h1>강의시간표입니다.</h1>
+<title>강의 시간표</title>
+</head>
+<body class="color_class">
+<h1>시간표</h1>
+<table style="border = 1px; text-align:center;">
+<thead>
+<tr><th width="50", bgcolor = '#D8D8D8'>시간</th><th width="100", bgcolor = '#D8D8D8'>월</th><th width="100", bgcolor = '#D8D8D8'>화</th><th width="100", bgcolor = '#D8D8D8'>수</th><th width="100", bgcolor = '#D8D8D8'>목</th><th width="100", bgcolor = '#D8D8D8'>금</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td></td><td rowspan ="2", bgcolor = '#FFFF00'>오토마타</td><td rowspan = "2", bgcolor = '#00FF00'>자료구조</td><td></td><td></td></tr>
+<tr><td>2</td><td></td><td bgcolor = '#FFFF00'>오토마타</td><td></td></tr>
+<tr><td>3</td><td rowspan = "2", bgcolor = '#FF0000'><font color = white>논리회로</font></td><td rowspan = "2", bgcolor = '#00FF00'>자료구조</td><td></td><td rowspan = "2", bgcolor = '#0000FF'><font color = white>인터넷</font><td></td></tr>
+<tr><td>4</td><td rowspan = "2", bgcolor = '#0000FF'><font color = white>인터넷</font></td><td></td></tr>
+<tr><td>5</td><td></td><td bgcolor = '#FF0000'><font color = white>논리회로</font></td><td></td><td></td></tr>
+<tr><td>6</td><td rowspan = "4", bgcolor = '#FF8000'>C++</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td rowspan = "3", bgcolor = '#8000FF'><font color = white>과학기술</font></td><td></td><td rowspan = "2", bgcolor = '#FF00FF'>멘토링</td><td></td></tr>
+<tr><td>8</td><td></td><td></td></tr>
+<tr><td>9</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
 </section>  <!--  /main -->
 <aside class="col-3 col-m-2 menu">
 <div id="clock"></div>
