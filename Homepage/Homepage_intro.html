@@ -39,14 +39,19 @@ function checkTime(i) {
 <section class="col-9 col-m-9"> <!--  main  -->
 <h1></h1>
 </section>  <!--  /main -->
-<aside class="col-3 col-m-2 menu">
+<footer>
 <p>현재시간</p>
 <div id="clock"></div>
-</aside>
-<footer>
-<span class='blue_window'>
-<input type='text' class='input_text'/>
-</span>
-<button type='submit' class='search'>검색</button></footer>
+<form method=get action="https://www.google.com/search" target="_blank">
+<table bgcolor="#ffffff">
+<tr>
+<td><a href="https://www.google.com/"></a>
+<input type=text name=q size=25 maxlength=255 value=""/>
+<input type=hidden name=ie value=utf-8/>
+<input type=hidden name=oe value=utf-8/>
+<input type=hidden name=hl value=ko/>
+<input type=submit name=button value="검색"/>
+</td></tr></table></form>
+</footer>
 </body>
 </html>
