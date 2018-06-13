@@ -43,7 +43,7 @@ padding:0px;
 }
 
 .menubar li a{
-background-color:light gray;
+background: rgb(204,204,204);
 color:#000000;
 display:block;
 font-weight:normal;
