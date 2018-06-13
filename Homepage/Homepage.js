@@ -36,3 +36,19 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i}; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌
     return i;
 }
+
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+        if(typeof window.onload != 'function') {
+            window.onload = func;
+        } else {
+            window.onload = function() {
+                oldonload();
+                func();
+        }
+    }
+}
+
+addLoadEvent(showCalendar(2018, 6));
+addLoadEvent(startTime);
