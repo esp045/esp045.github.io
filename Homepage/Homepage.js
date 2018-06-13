@@ -37,7 +37,7 @@ function checkTime(i) {
     return i;
 }
 
-
+/*onload 중복*/
 function addLoadEvent(func) {
     var oldonload = window.onload;
         if(typeof window.onload != 'function') {
