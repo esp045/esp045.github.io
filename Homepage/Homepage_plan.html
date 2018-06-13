@@ -41,14 +41,19 @@ function checkTime(i) {
 <p>방학중 간단한 게임 제작</p>
 <p>졸업까지 발전시켜 완전한 게임으로 완성시키기</p>
 </section>  <!--  /main -->
-<aside class="col-3 col-m-2 menu">
+<footer>
 <p>현재시간</p>
 <div id="clock"></div>
-</aside>
-<footer>
-<span class='blue_window'>
-<input type='text' class='input_text'/>
-</span>
-<button type='submit' class='search'>검색</button></footer>
+<form method=get action="https://www.google.com/search" target="_blank">
+<table bgcolor="#ffffff">
+<tr>
+<td><a href="https://www.google.com/"></a>
+<input type=text name=q size=25 maxlength=255 value=""/>
+<input type=hidden name=ie value=utf-8/>
+<input type=hidden name=oe value=utf-8/>
+<input type=hidden name=hl value=ko/>
+<input type=submit name=button value="검색"/>
+</td></tr></table></form>
+</footer>
 </body>
 </html>
