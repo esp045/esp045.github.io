@@ -21,6 +21,8 @@ color:red;background-color:transparent;text-decoration:underline;}
 a:active{
 color:blue;background-color:transparent;text-decoration:none;}
 
+.clock{font-size:2em;}
+
 .menubar{
 border:none;
 border:0px;
