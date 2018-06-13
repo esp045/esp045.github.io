@@ -2,6 +2,7 @@
 <!doctype html> <!-- Homepage.html -->
 <html lang="ko"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="Homepage.js"></script>
 <link rel="stylesheet" href="Homepage.css"/>
 <style> table, tr, th, td {border: 1px solid black; border-collapse:collapse;}
 section{width:100%; height:300px; float:left}
@@ -25,7 +26,7 @@ function checkTime(i) {
 </script>
 <title>홈페이지</title>
 </head>
-<body onload="startTime()">
+<body onload="startTime()" onload="showCalendar(2018,6)">
 <header class="header">
 <h1><a href="https://esp045.github.io/Homepage_main.html">Homepage</a></h1>
 <img src="https://esp045.github.io/Homepage/pac.png"alt="팩맨"/>
@@ -41,6 +42,9 @@ function checkTime(i) {
 </ul>
 </div>
 <section class="col-9 col-m-9"> <!--  main  -->
+<aside>
+<div id="calendarDiv" style="font-family:Gulim;font-size:9pt;"></div> 
+</aside>
 <center>
 <h1>강의 시간표</h1>
 <table style="border = 1px; text-align:center;">
