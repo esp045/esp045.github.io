@@ -5,7 +5,7 @@ header h1{text-align:center; color:white;}
 header img {width:100%;height:100px;}
 section{width:100%; height:400px; float:left; text-align:center; margin:10px, 0, 0, 0;}
 section h1{text-align:center;}
-aside {width:221px; float:left;line-height:30px;}
+aside {width:221px; float:right;line-height:30px;}
 footer{width:100%; height:50px;clear:both;}
 div ul{margin:0; padding:0;}
 div ul li{display:inline; margin:5px;}
