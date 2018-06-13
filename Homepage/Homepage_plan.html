@@ -1,6 +1,7 @@
 <!doctype html> <!-- Homepage.html -->
 <html lang="ko"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="Homepage.js"></script>
 <link rel="stylesheet" href="Homepage.css"/>
 <script>
 function startTime() {
@@ -21,7 +22,7 @@ function checkTime(i) {
 </script>
 <title>홈페이지</title>
 </head>
-<body onload="startTime()">
+<body onload="startTime()" onload="showCalendar(2018,6)">
 <header class="header">
 <h1><a href="https://esp045.github.io/Homepage_main.html">Homepage</a></h1>
 <img src="https://esp045.github.io/Homepage/pac.png"alt="팩맨"/>
@@ -41,6 +42,9 @@ function checkTime(i) {
 <p>방학중 간단한 게임 제작</p>
 <p>졸업까지 발전시켜 완전한 게임으로 완성시키기</p>
 </section>  <!--  /main -->
+<aside>
+<div id="calendarDiv" style="font-family:Gulim;font-size:9pt;"></div> 
+</aside>
 <footer>
 <p>현재시간</p>
 <div id="clock"></div>
